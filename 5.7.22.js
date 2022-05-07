@@ -8,3 +8,10 @@
 function positiveSum(arr) {
   return arr.filter(x => x > 0).reduce((acc, c) => acc + c, 0)
 }
+
+
+// Simple, remove the spaces from the string, then return the resultant string.
+
+function noSpace(x){
+  return x.split(' ').join('')
+}
