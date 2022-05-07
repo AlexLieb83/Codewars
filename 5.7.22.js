@@ -6,6 +6,5 @@
 
 
 function positiveSum(arr) {
-  let positives = arr.filter(x => x > 0)
-  return positives.reduce((acc, c) => acc + c, 0)
+  return arr.filter(x => x > 0).reduce((acc, c) => acc + c, 0)
 }
