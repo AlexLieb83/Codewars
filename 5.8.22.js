@@ -43,3 +43,12 @@ function check(a, x) {
 function grow(x){
   return x.reduce((acc, c) => acc * c, 1)
 }
+
+
+// I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
+
+// P.S. Each array includes only integer numbers. Output is a number too.
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((arr, c) => arr + c, 0)
+}
