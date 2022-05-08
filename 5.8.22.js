@@ -21,9 +21,5 @@
 // Advanced users may find this extremely easy and can easily write this in one line.
 
 function sum (numbers) {
-  if(numbers === []){
-    return 0
-  } else {
-    return numbers.reduce((acc, c) => acc + c, 0)
-  }
+  return numbers.reduce((acc, c) => acc + c, 0)
 };
