@@ -173,7 +173,6 @@ function twoSort(s) {
 //then set up if statements to return depending on counts
 function well(x){
   let good = x.filter(word => word === 'good')
-  let bad = x.filter(word => word === 'bad')
   
   if(good.length > 2){
     return 'I smell a series!'
