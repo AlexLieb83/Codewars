@@ -54,5 +54,5 @@ const arr = N => {
 // "h,o,l,a"
 
 function printArray(array){
-  return array.join(',')
+  return array.join()
 }
