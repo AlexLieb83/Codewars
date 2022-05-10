@@ -7,12 +7,7 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
-//set length array, to hold our final answers. set word to hold our individual words. run a for loop that will return the word[i] then the length. 
+//first split the string into an array, then map over the array, returning the word then the word.length
 function addLength(str) {
-  let length = []
-  let word = str.split(' ')
-  
-  for(i = 0; i < word.length; i++){
-    length.push(`${word[i]} ${word[i].length}`)
-  } return length
+  return str.split(' ').map(w => `${w} ${w.length}`)
 }
