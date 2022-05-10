@@ -102,3 +102,40 @@ function duckDuckGoose(players, goose) {
   return players[(goose-1)%players.length].name
 }
 
+
+
+// Finish the uefaEuro2016() function so it return string just like in the examples below:
+
+// uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
+// uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
+// uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
+
+
+function uefaEuro2016(teams, scores){
+  let winner = ''
+  if(scores[0] > scores[1]){
+    winner = `${teams[0]} won!`
+  } else if(scores[0] < scores[1]){
+    winner = `${teams[1]} won!`
+  } else {
+    winner = 'teams played draw.'
+  }
+  return `At match ${teams[0]} - ${teams[1]}, ${winner}`
+}
+
+
+
+// Create a method all which takes two params:
+
+//     a sequence
+//     a function (function pointer in C)
+
+// and returns true if the function in the params returns true for every element in the sequence. Otherwise, it should return false. If the sequence is empty, it should return true, since technically nothing failed the test.
+// Example
+
+// all((1, 2, 3, 4, 5), greater_than_9) -> false
+// all((1, 2, 3, 4, 5), less_than_9)    -> True
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
