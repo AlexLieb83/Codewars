@@ -190,3 +190,26 @@ function reverse(string){
 function sayHello( name, city, state ) {
   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
+
+
+// Create a function that takes a string and an integer (n).
+
+// The function should return a string that repeats the input string n number of times.
+
+// If anything other than a string is passed in you should return "Not a string"
+// Example
+
+// "Hi", 2 --> "HiHi"
+// 1234, 5 --> "Not a string"
+
+
+var repeatIt = function(str, n) {
+  let string = ''
+  if(typeof(str) === 'string'){
+  for(let i=0; i<n; i++){
+    string += str
+  } 
+  }else{
+    return 'Not a string'
+  } return string
+  }
