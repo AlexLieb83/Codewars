@@ -204,12 +204,5 @@ function sayHello( name, city, state ) {
 
 
 var repeatIt = function(str, n) {
-  let string = ''
-  if(typeof(str) === 'string'){
-  for(let i=0; i<n; i++){
-    string += str
-  } 
-  }else{
-    return 'Not a string'
-  } return string
+  return typeof str === 'string' ? str.repeat(n): 'Not a string'
   }
