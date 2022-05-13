@@ -9,7 +9,7 @@
 // Note: The parameter is optional. So you have to give it a default value.
 
 //make arr an empty string inside of the function
-//then run a for loop to run up to N, not including N, and push each number into the arr array. This will start from 0 and count up to N
+//then run a for loop to run up to N, not including N, and push each number into the arr array. This will start from 0 and count up to N.
 const arr = N => {
   const arr =[]
   
