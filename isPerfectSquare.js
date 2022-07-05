@@ -19,7 +19,12 @@
 // 26  =>  false
 
 //Ran into issues when 90 was tested, so I am using Math.floor to round the sqrt, to avoid any weird math rounding issues in the future
+// var isSquare = function (n) {
+//   let sqrt = Math.floor(Math.sqrt(n));
+//   return sqrt * sqrt === n;
+// };
+
+//better way - straight to the point
 var isSquare = function (n) {
-  let sqrt = Math.floor(Math.sqrt(n));
-  return sqrt * sqrt === n;
+  Math.sqrt(n) % 1 === 0;
 };
