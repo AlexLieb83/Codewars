@@ -24,16 +24,17 @@
 
 function nbYear(p0, percent, aug, p) {
   //track years it takes
-  let n = 1;
+  let years = 1;
 
   //while the population is less than the goal
   //p = goal, percent needs to be converted
   //(percent / 100)
   while (p0 + p0 * (percent / 100) + aug < p) {
     //track years
-    n++;
+    years++;
     //replace population with growth from this year
+    //we round down because we cannot have fraction of a person
     p0 = Math.floor(p0 + p0 * (percent / 100) + aug);
   }
-  return n;
+  return years;
 }
