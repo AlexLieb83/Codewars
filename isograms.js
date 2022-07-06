@@ -7,9 +7,12 @@
 // "moOse" --> false (ignore letter case)
 
 function isIsogram(str) {
+  //turn str into lowercase and sorted array
+  //this will line up any duplicate letters for us
   let arr = str.toLowerCase().split("").sort();
 
-  for (let i = 0; i < arr.length - 1; i++) {
+  //loop over array, if any letters double up, return false
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === arr[i + 1]) {
       return false;
     }
