@@ -20,4 +20,4 @@ function findDeletedNumber(arr, mixArr) {
 
 //p - array of ints, arr of ints with one int possibly deleted
 //r - int that has been deleted, or 0 if none deleted
-//ps - add up arr, add up mixArr, the diff === the answer
+//ps - add up arr, add up mixArr, the diff === answer
