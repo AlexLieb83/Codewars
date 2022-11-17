@@ -5,17 +5,23 @@
 // [5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
 // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
+//Efficient due to using pop over shift
 function sortArray(array) {
-  let newArr = array.filter((num) => num % 2 !== 0).sort((a, b) => a - b);
+  let sortedArr = array.filter((num) => num % 2 !== 0).sort((a, b) => b - a);
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 0) {
-      newArr.splice(i, 0, array[i]);
-    }
-  }
-
-  return newArr;
+  return array.map((num) => (num % 2 === 0 ? num : sortedArr.pop())); //O(1)
 }
+// function sortArray(array) {
+//   let newArr = array.filter((num) => num % 2 !== 0).sort((a, b) => a - b);
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       newArr.splice(i, 0, array[i]);
+//     }
+//   }
+
+//   return newArr;
+// }
 
 //p - array of numbers
 //r - array with odds sorted smallest to largest, and evens in original index
