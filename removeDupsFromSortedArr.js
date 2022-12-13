@@ -27,7 +27,7 @@ var removeDuplicates = function (nums) {
 };
 
 //basically loop over our array, move all of the non duplicates to the beginning of the array, and return the index where the duplicates start in the array,
-//so [1,1,2,2,3] => [1,2,3,1,2] return 3.
+//so [1,1,2,2,3] => [1,2,3,1,2] return 3
 
 // Custom Judge:
 
