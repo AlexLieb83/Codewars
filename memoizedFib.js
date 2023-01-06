@@ -4,7 +4,7 @@
 // for example: fib(5) means we need fib(4) + fib(3)
 // to find fib(4) we need fib(3) + fib(2), and to find fib(3) we need fib(2) + fib(1)
 // if we use memoization, then we will not need to run fib(3) and fib(2) and fib(1) twice or more, we can just store it's answer and return it when needed
-// this helps a ton if we were to run fib(100) or more
+// this helps a ton if we were to run fib(100) or more.
 
 let memo = {};
 
