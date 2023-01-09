@@ -2,7 +2,7 @@
 
 // Return the average of the given array rounded down to its nearest integer.
 
-// The array will never be empty.
+// The array will never be empty
 
 function getAverage(marks) {
   return Math.floor(marks.reduce((acc, c) => acc + +c) / marks.length);
