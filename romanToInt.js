@@ -22,13 +22,18 @@ const romanToInt = function (s) {
 
   let result = 0;
 
+  // loop over string
   for (let i = 0; i < s.length; i++) {
+    // look at curr value and next value
     const curr = values[s[i]];
     const next = values[s[i + 1]];
 
+    // if curr is less than next, IV, VX, XL, etc
     if (curr < next) {
       // IV -> 5 - 1 = 4
+      // add the diff of the two
       result += next - curr;
+      // increment by 1 again, because we have taken care of two letters
       i++;
     } else {
       result += curr;
