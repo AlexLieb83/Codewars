@@ -12,7 +12,7 @@ const factorial = (n) => {
   }
 };
 
-// The value of 0! is 1.
+// The value of 0! is 1
 
 // #Your task
 
