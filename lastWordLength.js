@@ -2,7 +2,7 @@
 
 // A word is a maximal
 // substring
-//  consisting of non-space characters only.
+//  consisting of non-space characters only
 
 var lengthOfLastWord = function (s) {
   // trim to remove front and ending spaces, then split string into array of words
