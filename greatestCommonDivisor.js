@@ -2,10 +2,24 @@
 
 // The inputs x and y are always greater or equal to 1, so the greatest common divisor will always be an integer that is also greater or equal to 1.
 
+// Recursive Solution
 function mygcd(x, y) {
-  for (let i = Math.min(x, y); i > 0; i--) {
-    if (x % i === 0 && y % i === 0) {
-      return i;
-    }
+  if (y === 0) {
+    return x;
   }
+  return mygcd(y, x % y);
 }
+//30 = 12 * q + r
+//30 = 12 * 2 + 6
+//12 = 6 * 2 + 0
+//6 = 6
+
+// function mygcd(x, y) {
+//   // loop over the smaller of the two numbers, from number to 0
+//   for (let i = Math.min(x, y); i > 0; i--) {
+//     // if both numbers are divisible by i, return i
+//     if (x % i === 0 && y % i === 0) {
+//       return i;
+//     }
+//   }
+// }
