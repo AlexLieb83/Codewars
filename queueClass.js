@@ -5,19 +5,19 @@ class Queue {
   constructor() {
     this.list = [];
   }
+
+  enqueue(item) {
+    // add item to the queue
+    this.list.push(item);
+  }
+
+  dequeue() {
+    // remove item from the front of the queue and return its value
+    return this.list.shift();
+  }
+
+  size() {
+    // return number of items in queue so far
+    return this.list.length;
+  }
 }
-
-Queue.prototype.enqueue = function (item) {
-  // add item to the queue
-  this.list.push(item);
-};
-
-Queue.prototype.dequeue = function () {
-  // remove item from the front of the queue and return its value
-  return this.list.shift();
-};
-
-Queue.prototype.size = function () {
-  // return number of items in queue so far
-  return this.list.length;
-};
