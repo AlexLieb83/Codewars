@@ -17,7 +17,7 @@ class Queue {
   }
 
   size() {
-    // return number of items in queue so far
+    // return number of items in queue
     return this.list.length;
   }
 }
