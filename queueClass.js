@@ -1,4 +1,4 @@
-// Create a Queue class
+// Create a Queue class - how would we make the dequeue faster, knowing that .shift() is not O(1)
 
 class Queue {
   // implement your Queue constructor here
