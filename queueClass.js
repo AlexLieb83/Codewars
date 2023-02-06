@@ -3,17 +3,23 @@
 class Queue {
   // implement your Queue constructor here
   constructor() {
-    this.list = [];
+    this.storage = {};
+    this.head = 0;
+    this.tail = 0;
   }
 
   enqueue(item) {
     // add item to the queue
-    this.list.push(item);
+    this.storage[this.tail] = item;
+    this.tail;
   }
 
   dequeue() {
     // remove item from the front of the queue and return its value
-    return this.list.shift();
+    let removed = this.storage[this.head];
+    delete this.storage[this.head];
+    this.head;
+    return removed;
   }
 
   size() {
