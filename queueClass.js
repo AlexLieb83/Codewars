@@ -22,13 +22,3 @@ class Queue {
     return removed;
   }
 }
-
-const queue = new Queue();
-
-queue.enqueue("apple");
-queue.enqueue("banana");
-queue.enqueue("blueberry");
-
-queue.dequeue("apple");
-
-queue.enqueue("strawberry");
