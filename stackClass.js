@@ -1,29 +1,30 @@
-// Create a Stack class
+// Create a Stack class - LIFO
 
-class Queue {
-  // implement your Queue constructor here
+class Stack {
   constructor() {
     this.storage = {};
-    this.head = 0;
-    this.tail = 0;
+    this.size = 0;
   }
 
-  enqueue(item) {
-    // add item to the queue
-    this.storage[this.tail] = item;
-    this.tail;
+  push(element) {
+    this.size++;
+    this.storage[this.size] = element;
   }
-
-  dequeue() {
-    // remove item from the front of the queue and return its value
-    let removed = this.storage[this.head];
-    delete this.storage[this.head];
-    this.head;
+  pop() {
+    let removed = this.storage[this.size];
+    delete this.storage[this.size];
+    this.size--;
     return removed;
   }
-
-  size() {
-    // return number of items in queue
-    return this.list.length;
+  peek() {
+    return this.storage[this.size];
   }
 }
+
+const stack = new Stack();
+
+stack.push("apple");
+stack.push("banana");
+stack.push("plum");
+
+stack.pop();
