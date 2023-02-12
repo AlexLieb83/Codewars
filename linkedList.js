@@ -1,5 +1,4 @@
 // Create a Doubly Linked List Class
-//adding and removing elements from a Linked List is much more fast than an array -- because of how it is stored in memory
 
 class LinkedList {
   constructor() {
