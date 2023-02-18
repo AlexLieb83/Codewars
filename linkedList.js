@@ -2,7 +2,7 @@
 // arrays take up contiguous memory, which is great for speed, but adding and removing things can slow things down.
 // linked lists do not have to be contiguous, they point to what is next or previous - this helps with adding and deleting.
 // when dealing with small amounts of data, link lists are the way to go.
-// commonly used on problems that have order, and need to add and remove things. Music player, flight schedules
+// commonly used on problems that have order, and need to add and remove things. Music player, flight scheduling
 
 class LinkedList {
   constructor() {
