@@ -9,6 +9,7 @@ class LinkedList {
     this.head = this.tail = null;
   }
   // add to end of list / tail
+  //
   append(val) {
     //if list is empty
     if (!this.tail) {
