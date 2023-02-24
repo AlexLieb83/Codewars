@@ -15,7 +15,7 @@ class LinkedList {
     if (!this.tail) {
       this.head = this.tail = new Node(val);
     } else {
-      let oldTail = this.tail;
+      oldTail = this.tail;
       this.tail = new Node(val);
       oldTail.next = this.tail;
       this.tail.prev = oldTail;
