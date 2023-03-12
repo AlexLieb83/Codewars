@@ -1,4 +1,4 @@
-// Binary Search Tree
+// Binary Search Tree - Practice
 
 class Node {
   constructor(value) {
