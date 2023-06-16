@@ -43,7 +43,6 @@ function alphabetPosition(text) {
 
   for (let i = 0; i < textFormatted.length; i++) {
     if (textFormatted[i] !== " " && alphabet.hasOwnProperty(textFormatted[i])) {
-      console.log(text[i]);
       result += alphabet[textFormatted[i]] + " ";
     }
   }
