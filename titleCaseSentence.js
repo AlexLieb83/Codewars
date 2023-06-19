@@ -11,3 +11,5 @@ function titleCase(str) {
 
   return result.join(" ");
 }
+
+titleCase("Hi there, do I know you?");
